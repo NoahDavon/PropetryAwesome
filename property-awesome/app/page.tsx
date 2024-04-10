@@ -5,9 +5,11 @@ import CompoundCard from "./components/CompoundCard";
 import { TabList, Tabs, Tab, TabPanels, TabPanel, Text } from "@chakra-ui/react";
 import { FaBuilding, FaHeart } from "react-icons/fa";
 import FavoritesPanel from "./components/FavoritesPanel";
+import Property from "./types/Property";
+import PropertiesPanel from "./components/PropertiesPanel";
 
 export default function Home() {
-  const [favorites, setFavorites] = useState<number[]>([])
+  const [favorites, setFavorites] = useState<number[]>([]) 
   return (
     <FavoritesContext.Provider value={{favorites: favorites, setFavorites: setFavorites}}>
       <Tabs className=" text-orange-300" variant={"enclosed"} colorScheme="orange">
@@ -16,9 +18,7 @@ export default function Home() {
           <Tab><FaHeart className="mx-4" size={"30px"}/><Text>{favorites.length? favorites.length : ""}</Text></Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>
-            <CompoundCard property={{Name: "Sodic East", ID: 10, Lat:0, Long: 0, "Price (Villa)": 1000, "Price/Meter": 10, Description: ""}}/>
-          </TabPanel>
+          <PropertiesPanel/>
           <FavoritesPanel/>
         </TabPanels>
       </Tabs>
