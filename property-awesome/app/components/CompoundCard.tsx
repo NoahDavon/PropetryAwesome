@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Property from '../types/Property'
 import { Text, Flex, IconButton } from '@chakra-ui/react'
 import Rounder from '../functions/Rounder'
-import { FaMapMarkerAlt } from 'react-icons/fa'
+import { FaHeart, FaMapMarkerAlt, FaRegHeart } from 'react-icons/fa'
+import FavoritesContext from '../FavoritesContext'
 
 type Props = {
     property: Property
@@ -22,11 +23,13 @@ export default function CompoundCard({property}: Props) {
 }
 
 function CompoundDetails({property}: Props){
+    const {favorites, setFavorites} = useContext(FavoritesContext)
     return (
         <div className='flex gap-7 content-center w-full items-center font-semibold text-orange-300'>
             <Text>{`${Rounder(property["Price (Villa)"])} £`}</Text>
             <Text>{`${Rounder(property["Price/Meter"])} £/m`}<sup>2</sup></Text>
-            <IconButton aria-label='location' fontSize={"30px"} icon={<FaMapMarkerAlt/>}/>
+            <IconButton className=' hover:scale-110 transition-transform' aria-label='location' fontSize={"30px"} icon={<FaMapMarkerAlt/>}/>
+            <IconButton className=' hover:scale-110 transition-transform' onClick={() => favorites.find(x => x == property.ID)? setFavorites(favorites.filter(x => x !== property.ID)) : setFavorites([...favorites, property.ID])} aria-label='favorite' fontSize={"30px"} icon={favorites.find(x => x == property.ID)? <FaHeart/> : <FaRegHeart/>}/>
         </div>
     )
 }
