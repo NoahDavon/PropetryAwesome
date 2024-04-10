@@ -1,0 +1,146 @@
+{"properties": [
+    {
+      "ID": 1,
+      "Name": "Sodic East",
+      "Long": 30.1691167271219,
+      "Lat": 31.6675890663111,
+      "Price/Meter": 68519,
+      "Price (Villa)": 18855556,
+      "Description": "Sodic East is a modern residential compound located in New Cairo. It offers a range of luxurious villas and apartments surrounded by lush green landscapes. Residents can enjoy amenities such as swimming pools, sports facilities, parks, and a vibrant community atmosphere."
+    },
+    {
+      "ID": 2,
+      "Name": "Sarai",
+      "Long": 30.0913758191181,
+      "Lat": 31.6880720117173,
+      "Price/Meter": 56338,
+      "Price (Villa)": 16619718,
+      "Description": "Sarai is a well-planned residential community situated in New Cairo. It boasts a contemporary design and a wide variety of residential units, including apartments, townhouses, and villas. Sarai features beautiful parks, lakes, retail outlets, and recreational facilities, providing a comfortable and convenient lifestyle for its residents."
+    },
+    {
+      "ID": 3,
+      "Name": "El Patio Prime",
+      "Long": 30.1731892286922,
+      "Lat": 31.6018718227544,
+      "Price/Meter": 62023,
+      "Price (Villa)": 19655399,
+      "Description": "El Patio Prime is a prestigious residential compound located in the heart of New Cairo. It offers high-end villas and apartments designed with elegance and modernity in mind. The compound features landscaped gardens, walking trails, a clubhouse, and a range of amenities, providing a serene and luxurious living experience."
+    },
+    {
+      "ID": 4,
+      "Name": "Maadi View",
+      "Long": 30.1241734775658,
+      "Lat": 31.6474844941763,
+      "Price/Meter": 74201,
+      "Price (Villa)": 23775162,
+      "Description": "Maadi View is a residential compound situated in the desirable neighborhood of Maadi, in the southern part of Cairo. It offers a mix of apartment buildings and villas with stunning views of the surrounding greenery. Maadi View provides a tranquil environment, proximity to amenities, and a strong sense of community."
+    },
+    {
+      "ID": 5,
+      "Name": "Madinaty",
+      "Long": 30.0955851445896,
+      "Lat": 31.636426904724,
+      "Price/Meter": 59320,
+      "Price (Villa)": 17175443,
+      "Description": "Madinaty is a large-scale residential development located in New Cairo. It offers a comprehensive range of housing options, including apartments, townhouses, and villas. With its well-planned infrastructure, parks, schools, commercial areas, and recreational facilities, Madinaty aims to provide a self-sufficient and family-friendly community."
+    },
+    {
+      "ID": 6,
+      "Name": "El Shorouk Springs",
+      "Long": 30.1213180108793,
+      "Lat": 31.6435704005626,
+      "Price/Meter": 54021,
+      "Price (Villa)": 15554223,
+      "Description": "El Shorouk Springs is a residential compound located in El Shorouk City, near New Cairo. It offers a mix of villas and apartments surrounded by landscaped gardens and water features. The compound provides a peaceful environment, recreational spaces, and various amenities for residents to enjoy."
+    },
+    {
+      "ID": 7,
+      "Name": "O West",
+      "Long": 29.928712744879,
+      "Lat": 30.9187977393496,
+      "Price/Meter": 92012,
+      "Price (Villa)": 33421653,
+      "Description": "O West is an upscale residential compound located in the Sheikh Zayed area. It offers a modern and luxurious living experience with a range of residential units, including villas, townhouses, and apartments. O West features beautifully landscaped gardens, recreational facilities, shopping malls, and a community center, providing residents with a comfortable and convenient lifestyle."
+    },
+    {
+      "ID": 8,
+      "Name": "The Crown",
+      "Long": 29.9889731540052,
+      "Lat": 31.0449407176631,
+      "Price/Meter": 57325,
+      "Price (Villa)": 17865312,
+      "Description": "The Crown is an exclusive residential compound situated in New Cairo. It prides itself on offering lavish villas and apartments designed with sophistication and elegance. The Crown provides a gated community environment with lush green spaces, sports facilities, clubhouse amenities, and a tranquil atmosphere that caters to residents seeking a refined and upscale lifestyle."
+    },
+    {
+      "ID": 9,
+      "Name": "Al Rabwa",
+      "Long": 30.0638208553174,
+      "Lat": 30.9877687970258,
+      "Price/Meter": 144742,
+      "Price (Villa)": 54552112,
+      "Description": "Nestled in the prestigious area of Sheikh Zayed, Al Rabwa is an exclusive residential compound that offers a luxurious and refined living experience. This sought-after community showcases a collection of elegant villas and residences, meticulously designed to provide residents with the utmost comfort and sophistication."
+    },
+    {
+      "ID": 10,
+      "Name": "Mountain View October Park",
+      "Long": 29.9800935813479,
+      "Lat": 31.0738490816791,
+      "Price/Meter": 49224,
+      "Price (Villa)": 12432115,
+      "Description": "Mountain View is a renowned residential compound that has several projects in different areas of Cairo, including New Cairo and Sheikh Zayed. It offers a variety of housing options, such as villas, townhouses, and apartments, designed to accommodate different preferences and needs. Mountain View developments often feature landscaped gardens, scenic views, recreational facilities, and a strong emphasis on community living."
+    },
+    {
+      "ID": 11,
+      "Name": "Keeva",
+      "Long": 29.9937917076788,
+      "Lat": 30.9960510816795,
+      "Price/Meter": 60142,
+      "Price (Villa)": 18654724,
+      "Description": "Keeva is a residential compound located in New Cairo, offering a blend of modern architecture and serene surroundings. It presents a mix of contemporary villas and apartments, complemented by lush green landscapes, walking paths, and recreational areas. Keeva aims to provide a harmonious living environment for residents seeking comfort and tranquility."
+    },
+    {
+      "ID": 12,
+      "Name": "New Giza",
+      "Long": 30.0075451498316,
+      "Lat": 31.0596056545959,
+      "Price/Meter": 91542,
+      "Price (Villa)": 32659832,
+      "Description": "New Giza is a prestigious residential and golf community situated in the Giza Governorate, near Cairo. It features luxurious villas and apartments designed to offer a high standard of living. New Giza boasts beautifully landscaped gardens, a championship golf course, sports facilities, restaurants, and a vibrant community atmosphere, providing residents with an exclusive and upscale lifestyle."
+    },
+    {
+      "ID": 13,
+      "Name": "Royal City",
+      "Long": 30.0391036118844,
+      "Lat": 31.0275093709145,
+      "Price/Meter": 71563,
+      "Price (Villa)": 21453213,
+      "Description": "Royal City is a residential compound located in New Cairo, offering a mix of elegant villas and apartments. It focuses on providing a family-friendly environment with spacious homes, landscaped gardens, children's playgrounds, and recreational amenities. Royal City aims to create a sense of community and a comfortable living experience for its residents."
+    },
+    {
+      "ID": 14,
+      "Name": "Allegeria",
+      "Long": 30.0729175289613,
+      "Lat": 30.9653896105179,
+      "Price/Meter": 209123,
+      "Price (Villa)": 94321653,
+      "Description": "Allegria is an upscale residential compound situated in the Sheikh Zayed area. It offers a range of luxurious villas and apartments surrounded by lush green landscapes and stunning views. Allegria features a golf course, clubhouse, sports facilities, and a variety of amenities, providing residents with an exclusive and refined living environment."
+    },
+    {
+      "ID": 15,
+      "Name": "Beverly Hills",
+      "Long": 30.0662798354934,
+      "Lat": 30.9482885240097,
+      "Price/Meter": 82012,
+      "Price (Villa)": 27051243,
+      "Description": "Beverly Hills is a residential compound located in Sheikh Zayed, offering a mix of upscale villas and apartments. It is known for its distinctive architecture, well-maintained landscaping, and a range of amenities such as swimming pools, sports facilities, and recreational spaces. Beverly Hills aims to provide a luxurious and comfortable living experience for its residents."
+    },
+    {
+      "ID": 16,
+      "Name": "Cleopatra Square",
+      "Long": 30.0107026934991,
+      "Lat": 31.0024875700406,
+      "Price/Meter": 51721,
+      "Price (Villa)": 14325642,
+      "Description": "Cleopatra Square is a residential compound situated in New Cairo, inspired by ancient Egyptian architectural themes. It offers a variety of residential units, including apartments and villas, designed to blend modern living with a touch of history. Cleopatra Square features landscaped gardens, water features, communal areas, and a range of amenities, providing residents with a unique and captivating living environment."
+    }
+  ]}
