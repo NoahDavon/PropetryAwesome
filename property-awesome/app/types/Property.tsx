@@ -3,8 +3,8 @@ export type Property = {
     Name: string,
     Lat: number,
     Long: number, 
-    "Price/Meter": string,
-    "Price (Villa)": string,
+    "Price/Meter": number,
+    "Price (Villa)": number,
     Description: string
 }
 export default Property;
