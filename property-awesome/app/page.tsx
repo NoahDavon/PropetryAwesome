@@ -17,7 +17,7 @@ export default function Home() {
           <Tab><FaBuilding className="mx-4" size={"30px"}/></Tab>
           <Tab><FaHeart className="mx-4" size={"30px"}/><Text>{favorites.length? favorites.length : ""}</Text></Tab>
         </TabList>
-        <TabPanels>
+        <TabPanels padding={"1.25rem"}>
           <PropertiesPanel/>
           <FavoritesPanel/>
         </TabPanels>
