@@ -7,6 +7,8 @@ type Props = {
 
 export default function CompoundCard({property}: Props) {
   return (
-    <div>CompoundCard</div>
+    <div className={`bg-[url(/compoundImages/${property.ID}.png)] hover:scale-110 transition-all rounded-xl w-64 lg:w-96 h-64 lg:h-96 relative`}>
+
+    </div>
   )
 }
