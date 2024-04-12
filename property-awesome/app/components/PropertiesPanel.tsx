@@ -14,7 +14,7 @@ export default function PropertiesPanel({}: Props) {
     useEffect(()=> {fetchMore();}, [])
     const fetchMore = useCallback(()=>{
         console.log("FETCHING")
-        fetch(`http://localhost:3001/properties?_page=${nextLink}&_per_page=6`).then(r => r.json()).then(r => {
+        fetch(`http://localhost:3001/properties?_page=${nextLink}&_per_page=9`).then(r => r.json()).then(r => {
           setNextLink(r.next);
           setProperties([...properties, ...r.data]);
         })

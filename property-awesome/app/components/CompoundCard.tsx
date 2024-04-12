@@ -12,7 +12,7 @@ type Props = {
 
 export default function CompoundCard({property}: Props) {
   return (
-    <Link href={`/compoundDetails/${property.id}`}><div style={{backgroundImage: `url(compoundImages/${property.ID}.png)`}} className={` cursor-pointer bg-cover group hover:scale-110 transition-all rounded-xl w-80 lg:w-96 h-80 lg:h-96 relative`}>
+    <Link href={`/compoundDetails/${property.id}`}><div style={{backgroundImage: `url(compoundImages/${property.id}.png)`}} className={` cursor-pointer bg-cover group hover:scale-110 transition-all rounded-xl w-80 lg:w-96 h-80 lg:h-96 relative`}>
         <Text className=' absolute top-0 left-0 text-black font-semibold lg:group-hover:opacity-0 stroke-black p-2'>{property.Name}</Text>
         <div className=' p-2 z-10 bg-white w-full text-orange-300 opacity-0 font-semibold lg:group-hover:opacity-75 transition-all rounded-xl'>
             <Text className=' '>{property.Name}</Text>
@@ -30,7 +30,10 @@ function CompoundDetails({property}: Props){
             <Text>{`£${Rounder(property["Price (Villa)"])}`}</Text>
             <Text>{`£${Rounder(property["Price/Meter"])} /m`}<sup>2</sup></Text>
             <IconButton variant={"unstyled"} className=' hover:scale-110 transition-transform' aria-label='location' fontSize={"30px"} icon={<FaMapMarkerAlt/>}/>
-            <IconButton variant="unstyled" className=' hover:scale-110 transition-transform' onClick={(e) => {e.preventDefault(); favorites.find(x => x == property.ID)? setFavorites(favorites.filter(x => x !== property.ID)) : setFavorites([...favorites, property.ID]);}} aria-label='favorite' fontSize={"30px"} icon={favorites.find(x => x == property.ID)? <FaHeart/> : <FaRegHeart/>}/>
+            <div className=' hover:scale-110 transition-transform relative'>
+                <IconButton variant="unstyled" position={"absolute"} className='right-0 -top-5' onClick={(e) => {e.preventDefault(); favorites.find(x => x == property.id)? setFavorites(favorites.filter(x => x !== property.id)) : setFavorites([...favorites, property.id]);}} aria-label='favorite' fontSize={"30px"} icon={<FaRegHeart/>}/>
+                <IconButton variant="unstyled" position={"absolute"} className={`transition-opacity duration-1000 right-0 -top-5 opacity-${favorites.find(x => x == property.id)? "100" : "0"}`} onClick={(e) => {e.preventDefault(); favorites.find(x => x == property.id)? setFavorites(favorites.filter(x => x !== property.id)) : setFavorites([...favorites, property.id]);}} aria-label='favorited' fontSize={"30px"} icon={<FaHeart/>}/>
+            </div>
         </div>
     )
 }

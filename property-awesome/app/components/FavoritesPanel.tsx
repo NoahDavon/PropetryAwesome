@@ -18,7 +18,7 @@ export default function FavoritesPanel({}: Props) {
   return (
     <TabPanel padding={"1.25rem"} display={"flex"} alignItems={"center"} flexDir={"column"} width={"100%"}>
         <Button width={"5rem"} margin={"1rem"} colorScheme='orange' onClick={()=> setFavorites([])}>Clear</Button>
-        <div className='flex content-center gap-5 flex-wrap'>{properties?.filter(property => favorites.find(id => property.ID == id)).map(property => <CompoundCard property={property}/>)}</div>
+        <div className='flex content-center gap-5 flex-wrap'>{properties?.filter(property => favorites.find(id => property.id == id)).map(property => <CompoundCard property={property}/>)}</div>
         
     </TabPanel>
   )

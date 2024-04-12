@@ -9,7 +9,7 @@ import Property from "./types/Property";
 import PropertiesPanel from "./components/PropertiesPanel";
 
 export default function Home() {
-  const [favorites, setFavorites] = useState<number[]>([]) 
+  const [favorites, setFavorites] = useState<string[]>([]) 
   return (
     <FavoritesContext.Provider value={{favorites: favorites, setFavorites: setFavorites}}>
       <Tabs className=" text-orange-300" variant={"enclosed"} colorScheme="orange">
@@ -17,7 +17,7 @@ export default function Home() {
           <Tab><FaBuilding className="mx-4" size={"30px"}/></Tab>
           <Tab><FaHeart className="mx-4" size={"30px"}/><Text>{favorites.length? favorites.length : ""}</Text></Tab>
         </TabList>
-        <TabPanels padding={"0.25rem"}>
+        <TabPanels paddingX={"0.25rem"}>
           <PropertiesPanel/>
           <FavoritesPanel/>
         </TabPanels>
