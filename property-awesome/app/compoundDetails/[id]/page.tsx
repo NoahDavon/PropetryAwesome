@@ -1,6 +1,7 @@
 'use server'
 
 import BackButton from "@/app/components/BackButton"
+import FavoriteButton from "@/app/components/FavoriteButton"
 import MapComponent from "@/app/components/MapComponent"
 import Rounder from "@/app/functions/Rounder"
 import Property from "@/app/types/Property"
@@ -26,8 +27,12 @@ export default async function Page({params: {id}}: Props) {
         <BackButton/>
         <div className="w-full lg:w-2/3 mx-auto border-2  border-orange-300 p-2 rounded-xl">
         <Image className=" lg:w-2/3 mx-auto rounded-xl" src={`/compoundImages/${property.id}.png`} aspectRatio={"1/1"}/>
-        <Text className="text-orange-400 font-bold text-5xl p-4">{property.Name}</Text>
-        <div className="flex justify-between lg:justify-center gap-8 p-4">
+        <div className="h-4"></div>
+        <div className="flex w-full lg:w-10/12 justify-end">
+        <FavoriteButton id={property.id}/>
+        </div>
+        <Text className="text-orange-400 font-bold text-5xl lg:p-4 py-8">{property.Name}</Text>
+        <div className="flex justify-between lg:justify-center gap-8 lg:p-4">
             <div className="text-center">
                 <Text className="text-orange-300 font-semibold text-2xl">Average Price</Text>
                 <Text className="text-xl">{`£${Rounder(property["Price (Villa)"])}`}</Text>
@@ -38,7 +43,7 @@ export default async function Page({params: {id}}: Props) {
                 <Text className="text-xl">{`£${Rounder(property["Price/Meter"])}`}</Text>
             </div>
         </div>
-        <Text className="text-xl p-4">{property.Description}</Text>
+        <Text className="text-xl lg:p-4 py-4">{property.Description}</Text>
         <div style={{height: "300px"}}>
         <Map position={[property.Long, property.Lat]} Name={property.Name}/>
         </div>
