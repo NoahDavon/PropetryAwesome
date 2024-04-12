@@ -8,6 +8,6 @@ type Props = {}
 
 export default function BackButton({}: Props) {
   return (
-    <Link href={"/"}><div className=' sticky text-orange-300'><IconButton aria-label='Back to home' fontSize={"30px"} icon={<FaArrowLeft/>}/></div></Link>
+    <Link href={"/"} className='fixed'><IconButton aria-label='Back to home' fontSize={"30px"} icon={<FaArrowLeft/>}/></Link>
   )
 }
