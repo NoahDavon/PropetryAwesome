@@ -21,7 +21,7 @@ export default async function Page({params: {id}}: Props) {
     <div className="p-2">
         <BackButton/>
         <div className="w-full lg:w-2/3 mx-auto border-2  border-orange-300 p-2 rounded-xl">
-        <Image className=" w-2/3 mx-auto rounded-xl" src={`/compoundImages/${property.id}.png`} aspectRatio={"1/1"}/>
+        <Image className=" lg:w-2/3 mx-auto rounded-xl" src={`/compoundImages/${property.id}.png`} aspectRatio={"1/1"}/>
         <Text className="text-orange-400 font-bold text-5xl p-4">{property.Name}</Text>
         <div className="flex justify-between lg:justify-center gap-8 p-4">
             <div className="text-center">
