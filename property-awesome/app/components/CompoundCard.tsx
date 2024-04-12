@@ -5,6 +5,7 @@ import Rounder from '../functions/Rounder'
 import { FaHeart, FaMapMarkerAlt, FaRegHeart } from 'react-icons/fa'
 import FavoritesContext from '../FavoritesContext'
 import Link from 'next/link'
+import FavoriteButton from './FavoriteButton'
 
 type Props = {
     property: Property
@@ -30,10 +31,7 @@ function CompoundDetails({property}: Props){
             <Text>{`£${Rounder(property["Price (Villa)"])}`}</Text>
             <Text>{`£${Rounder(property["Price/Meter"])} /m`}<sup>2</sup></Text>
             <IconButton variant={"unstyled"} className=' hover:scale-110 transition-transform' aria-label='location' fontSize={"30px"} icon={<FaMapMarkerAlt/>}/>
-            <div className=' hover:scale-110 transition-transform relative'>
-                <IconButton variant="unstyled" position={"absolute"} className='right-0 -top-5' onClick={(e) => {e.preventDefault(); favorites.find(x => x == property.id)? setFavorites(favorites.filter(x => x !== property.id)) : setFavorites([...favorites, property.id]);}} aria-label='favorite' fontSize={"30px"} icon={<FaRegHeart/>}/>
-                <IconButton variant="unstyled" position={"absolute"} className={`transition-opacity duration-1000 right-0 -top-5 opacity-${favorites.find(x => x == property.id)? "100" : "0"}`} onClick={(e) => {e.preventDefault(); favorites.find(x => x == property.id)? setFavorites(favorites.filter(x => x !== property.id)) : setFavorites([...favorites, property.id]);}} aria-label='favorited' fontSize={"30px"} icon={<FaHeart/>}/>
-            </div>
+            <FavoriteButton id={property.id}/>
         </div>
     )
 }
