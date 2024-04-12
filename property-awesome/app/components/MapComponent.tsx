@@ -7,7 +7,7 @@ import { Popup } from 'react-leaflet/Popup'
 import { TileLayer } from 'react-leaflet/TileLayer'
 import 'leaflet/dist/leaflet.css';
 let DefaultIcon = L.icon({
-    iconUrl: 'imgs/marker.png',
+    iconUrl: '/imgs/marker.png',
     shadowUrl: 'leaflet/dist/images/marker-shadow.png',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
