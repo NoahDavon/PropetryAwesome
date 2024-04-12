@@ -33,7 +33,7 @@ export default async function Page({params: {id}}: Props) {
         <div className="flex w-full lg:w-10/12 justify-end">
         <FavoriteButton id={property.id}/>
         </div>
-        <div className="flex justify-between lg:justify-center gap-8 lg:p-4">
+        <div className="flex justify-between lg:justify-center gap-8 lg:p-4 py-4">
             <div className="text-center">
                 <Text className="text-orange-300 font-semibold text-2xl">Average Price</Text>
                 <Text className="text-xl">{`£${Rounder(property["Price (Villa)"])}`}</Text>
