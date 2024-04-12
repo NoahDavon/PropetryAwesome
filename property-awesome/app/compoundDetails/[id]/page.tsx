@@ -1,10 +1,14 @@
 'use server'
 
 import BackButton from "@/app/components/BackButton"
+import MapComponent from "@/app/components/MapComponent"
 import Rounder from "@/app/functions/Rounder"
 import Property from "@/app/types/Property"
-import { Divider, Image, Text } from "@chakra-ui/react"
-
+import { Divider, Image, Spinner, Text } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
+const Map = dynamic(() => import("@/app/components/MapComponent"), {
+    ssr: false
+})
 type Props = {
     params: {
         id: string
@@ -35,6 +39,9 @@ export default async function Page({params: {id}}: Props) {
             </div>
         </div>
         <Text className="text-xl p-4">{property.Description}</Text>
+        <div style={{height: "300px"}}>
+        <Map position={[property.Long, property.Lat]} Name={property.Name}/>
+        </div>
         </div>
     </div> 
   )
