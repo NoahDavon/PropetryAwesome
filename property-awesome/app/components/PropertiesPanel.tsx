@@ -14,7 +14,7 @@ export default function PropertiesPanel({}: Props) {
     useEffect(()=> {fetchMore();}, [])
     const fetchMore = useCallback(()=>{
         console.log("FETCHING")
-        fetch(`http://localhost:3000/properties?_page=${nextLink}&_per_page=6`).then(r => r.json()).then(r => {
+        fetch(`http://localhost:3001/properties?_page=${nextLink}&_per_page=6`).then(r => r.json()).then(r => {
           setNextLink(r.next);
           setProperties([...properties, ...r.data]);
         })
@@ -25,7 +25,7 @@ export default function PropertiesPanel({}: Props) {
         <InfiniteScroll
             dataLength={properties.length}
             hasMore= {nextLink!==null}
-            style={{display: "flex", justifyContent: "center", width: "100%", gap: "40px", flexWrap: "wrap"}}
+            style={{display: "flex", justifyContent: "center", width: "100%", gap: "40px", flexWrap: "wrap", paddingTop: "1.25rem"}}
             next={fetchMore}
             loader= {<Spinner colorScheme='orange'/>}
         >

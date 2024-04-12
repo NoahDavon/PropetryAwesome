@@ -5,6 +5,7 @@ export type Property = {
     Long: number, 
     "Price/Meter": number,
     "Price (Villa)": number,
-    Description: string
+    Description: string,
+    id: string
 }
 export default Property;
