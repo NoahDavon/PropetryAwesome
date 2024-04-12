@@ -12,8 +12,8 @@ export default function FavoriteButton({id}: Props) {
     const {favorites, setFavorites} = useContext(FavoritesContext)
   return (
     <div className=' hover:scale-110 transition-transform relative text-orange-300'>
-                <IconButton variant="unstyled" position={"absolute"} className='right-0 -top-5' onClick={(e) => {HandleClick(e);}} aria-label='favorite' fontSize={"30px"} icon={<FaRegHeart/>}/>
-                <IconButton variant="unstyled" position={"absolute"} className={`transition-opacity duration-1000 right-0 -top-5 opacity-${favorites.find(x => x == id)? "100" : "0"}`} onClick={(e) => {HandleClick(e)}} aria-label='favorited' fontSize={"30px"} icon={<FaHeart/>}/>
+                <IconButton variant="unstyled" position={"absolute"} className='right-0 -top-5' onClick={HandleClick} aria-label='favorite' fontSize={"30px"} icon={<FaRegHeart/>}/>
+                <IconButton variant="unstyled" position={"absolute"} className={`transition-opacity duration-1000 right-0 -top-5 opacity-${favorites.find(x => x == id)? "100" : "0"}`} onClick={HandleClick} aria-label='favorited' fontSize={"30px"} icon={<FaHeart/>}/>
             </div>
   )
 

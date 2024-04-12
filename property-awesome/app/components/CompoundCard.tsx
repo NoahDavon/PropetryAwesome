@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Property from '../types/Property'
-import { Text, Flex, IconButton } from '@chakra-ui/react'
+import { Text, IconButton } from '@chakra-ui/react'
 import Rounder from '../functions/Rounder'
-import { FaHeart, FaMapMarkerAlt, FaRegHeart } from 'react-icons/fa'
-import FavoritesContext from '../FavoritesContext'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import Link from 'next/link'
 import FavoriteButton from './FavoriteButton'
 
@@ -25,7 +24,6 @@ export default function CompoundCard({property}: Props) {
 }
 
 function CompoundDetails({property}: Props){
-    const {favorites, setFavorites} = useContext(FavoritesContext)
     return (
         <div className='flex justify-between flex-grow items-center font-semibold text-orange-300'>
             <Text>{`£${Rounder(property["Price (Villa)"])}`}</Text>

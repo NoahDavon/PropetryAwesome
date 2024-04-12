@@ -25,13 +25,14 @@ export default async function Page({params: {id}}: Props) {
   return (
     <div className="p-2">
         <BackButton/>
+        
         <div className="w-full lg:w-2/3 mx-auto border-2  border-orange-300 p-2 rounded-xl">
+        <Text className="text-orange-400 font-bold text-5xl lg:p-4 py-8">{property.Name}</Text>
         <Image className=" lg:w-2/3 mx-auto rounded-xl" src={`/compoundImages/${property.id}.png`} aspectRatio={"1/1"}/>
         <div className="h-4"></div>
         <div className="flex w-full lg:w-10/12 justify-end">
         <FavoriteButton id={property.id}/>
         </div>
-        <Text className="text-orange-400 font-bold text-5xl lg:p-4 py-8">{property.Name}</Text>
         <div className="flex justify-between lg:justify-center gap-8 lg:p-4">
             <div className="text-center">
                 <Text className="text-orange-300 font-semibold text-2xl">Average Price</Text>
